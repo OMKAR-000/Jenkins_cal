@@ -1,8 +1,9 @@
-/**
+ /**
  * The Calculator class performs basic arithmetic operations such as addition, subtraction,
  * multiplication, and division on two float operands.
  */
-class cal{
+
+ class cal extends ExtendedCalculator{
 
     /**
      * The function "addition" takes two float operands and returns their sum.
@@ -11,6 +12,7 @@ class cal{
      * @param operand_2 The second operand in the addition operation.
      * @return The sum of operand_1 and operand_2.
      */
+
     float addition(float operand_1, float operand_2){
         return(operand_1 + operand_2);
     }
@@ -22,6 +24,7 @@ class cal{
      * @param operand_2 The second operand in the subtraction operation.
      * @return the result of subtracting operand_2 from operand_1.
      */
+
     float substraction(float operand_1, float operand_2){
         return(operand_1 - operand_2);
     }
@@ -34,6 +37,7 @@ class cal{
      * @param operand_2 The second operand in the multiplication operation.
      * @return The product of operand_1 and operand_2 is being returned.
      */
+
     float multiplication(float operand_1, float operand_2){
         return(operand_1 * operand_2);
     }
@@ -45,6 +49,7 @@ class cal{
      * @param operand_2 The second operand in the division operation.
      * @return the result of dividing operand_1 by operand_2.
      */
+
     float division(float operand_1, float operand_2){
         return(operand_1 / operand_2);
     }
@@ -53,7 +58,7 @@ class cal{
     public static void main(String[] args){
         float operand_1 = 10;
         float operand_2 = 5;
-        Calculator calc = new Calculator();
+        cal calc = new cal();
         float add_result = calc.addition(operand_1, operand_2);
         System.out.println("Result of Addition is: " + add_result);
         float sub_result = calc.substraction(operand_1, operand_2);
@@ -62,5 +67,9 @@ class cal{
         System.out.println("Result of Multiplication is: " + mul_result);
         float div_result = calc.division(operand_1, operand_2);
         System.out.println("Result of Division is: " + div_result);
+        float cube_result = calc.cube(operand_1);
+        System.out.println("Result of cube is: " + cube_result);
+        float square_result = calc.square(operand_1);
+        System.out.println("Result of square is: " + square_result);
     }
 }
