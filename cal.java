@@ -53,7 +53,7 @@ class cal{
     public static void main(String[] args){
         float operand_1 = 10;
         float operand_2 = 5;
-        Calculator calc = new Calculator();
+        cal calc = new cal();
         float add_result = calc.addition(operand_1, operand_2);
         System.out.println("Result of Addition is: " + add_result);
         float sub_result = calc.substraction(operand_1, operand_2);
